@@ -169,11 +169,7 @@ fun display(
                     start.linkTo(progressbar.start)
                     end.linkTo(progressbar.end)
                 }
-            .clickable(
-                    onClick = {
-                       if(!running) clockview.showpopup() // popup for set time
-                    }
-                ),
+                .clickable(onClick = { if (!running) clockview.showpopup() }),
             color = MaterialTheme.colors.onSurface,
             style = MaterialTheme.typography.h2
 
